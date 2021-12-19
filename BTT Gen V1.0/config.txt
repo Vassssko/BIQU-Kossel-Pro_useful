@@ -1,0 +1,40 @@
+start
+echo:Marlin 1.1.5
+
+echo: Last Updated: 2017-08-28 12:00 | Author: (none, default config)
+echo:Compiled: Dec 28 2017
+echo: Free Memory: 3456  PlannerBufferBytes: 1232
+echo:Hardcoded Default Settings Loaded
+echo:  G21    ; Units in mm
+echo:  M149 C ; Units in Celsius
+
+echo:Filament settings: Disabled
+echo:  M200 D3.00
+echo:  M200 D0
+echo:Steps per unit:
+echo:  M92 X100.00 Y100.00 Z100.00 E100.00
+echo:Maximum feedrates (units/s):
+echo:  M203 X800.00 Y800.00 Z800.00 E25.00
+echo:Maximum Acceleration (units/s2):
+echo:  M201 X1500 Y1500 Z1500 E1000
+echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+echo:  M204 P3000.00 R3000.00 T3000.00
+echo:Advanced: S<min_feedrate> T<min_travel_feedrate> B<min_segment_time_ms> X<max_xy_jerk> Z<max_z_jerk> E<max_e_jerk>
+echo:  M205 S0.00 T0.00 B20000 X20.00 Y20.00 Z20.00 E5.00
+echo:Auto Bed Leveling:
+echo:  M420 S0
+echo:Endstop adjustment:
+echo:  M666 X0.00 Y0.00 Z0.00
+echo:Delta settings: L<diagonal_rod> R<radius> H<height> S<segments_per_s> B<calibration radius> XYZ<tower angle corrections>
+echo:  M665 L337.59 R166.86 H310.00 S120.00 B115.00 X0.00 Y0.00 Z0.00
+echo:Material heatup parameters:
+echo:  M145 S0 H180 B70 F255
+  M145 S1 H240 B100 F255
+echo:PID settings:
+echo:  M301 P22.20 I1.08 D114.00
+echo:  M304 P22.20 I1.08 D114.00
+echo:Z-Probe Offset (mm):
+echo:  M851 Z-1.85
+Error:STOP called because of BLTouch error - restart with M999
+Error:Printer stopped due to errors. Fix the error and use M999 to restart. (Temperature is reset. Set it after restarting)
+echo:SD init fail
